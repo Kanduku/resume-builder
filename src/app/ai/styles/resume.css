@@ -62,7 +62,8 @@ html, body {
 
 /* Input fields */
 .resume-builder__input,
-.resume-builder__textarea {
+.resume-builder__textarea,
+.resume-builder__textarea--monospace {
   width: 100%;
   padding: 10px 14px;
   margin: 10px 0;
@@ -71,6 +72,8 @@ html, body {
   font-size: 15px;
   box-sizing: border-box;
   background-color: #fff;
+  color: #000;              /* Make input text black */
+  caret-color: #000;        /* Ensure black caret */
 }
 
 /* Monospace textarea */
@@ -170,4 +173,26 @@ html, body {
 }
 .resume-builder__back-btn:hover {
   background-color: #2c3e50;
+}
+
+/* ContentEditable fields */
+[contenteditable] {
+  color: #000;              /* Black text */
+  caret-color: #000;        /* Black caret */
+  outline: none;
+  transition: background-color 0.2s ease;
+}
+
+[contenteditable]:hover,
+[contenteditable]:focus {
+  background-color: #f2f2f2;
+  outline: 1px dashed #aaa;
+  border-radius: 4px;
+}
+
+/* Optional placeholder support for contenteditable */
+[contenteditable]:empty:before {
+  content: attr(data-placeholder);
+  color: #aaa;
+  font-style: italic;
 }
