@@ -1,0 +1,119 @@
+.toolbarContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding-top: 7em;
+  justify-content: center;
+  max-width: 440px;
+  margin: auto;
+  position: fixed;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  border-radius: 16px;
+  padding: 10px;
+  backdrop-filter: blur(18px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+  cursor: pointer;
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+
+/* unique variations */
+.add { background: rgba(76, 175, 80, 0.2); }
+.delete { background: rgba(244, 67, 54, 0.2); }
+.font { background: rgba(33, 150, 243, 0.2); }
+.fontSize { background: rgba(156, 39, 176, 0.2); }
+.sizeInput { background: rgba(255, 152, 0, 0.2); }
+.colorPicker { background: rgba(255, 193, 7, 0.2); }
+.opacity { background: rgba(0, 150, 136, 0.2); }
+.rotate { background: rgba(121, 85, 72, 0.2); }
+.gradient { background: rgba(255, 87, 34, 0.2); }
+.palette { background: rgba(96, 125, 139, 0.2); }
+.imageUpload { background: rgba(63, 81, 181, 0.2); }
+.undoRedo { background: rgba(233, 30, 99, 0.2); }
+.zoom { background: rgba(3, 169, 244, 0.2); }
+.mode { background: rgba(205, 220, 57, 0.2); }
+.files { background: rgba(158, 158, 158, 0.2); }
+.export { background: rgba(0, 188, 212, 0.2); }
+
+.card:hover {
+  transform: scale(1.08);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+}
+
+
+.card select,
+.card input[type="number"],
+.card input[type="color"] {
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 14px;
+  text-align: center;
+}
+
+.card button {
+  background: rgba(255,255,255,0.2);
+  backdrop-filter: blur(92px);
+  border: none;
+  border-radius: 8px;
+  padding: 6px 10px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background 0.2s;
+  color: black;
+}
+.card button:hover {
+  background: rgba(255,255,255,0.3);
+}
+
+/* download top right buttons */
+.downloadContainer {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  gap: 10px;
+  z-index: 1000;
+
+}
+
+.downloadButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 14px;
+  border-radius: 14px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  backdrop-filter: blur(14px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  transition: transform 0.2s, box-shadow 0.3s, background 0.3s;
+}
+
+.downloadButton:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+.downloadImage {
+  background: linear-gradient(135deg, #4caf50, #66bb6a);
+}
+.downloadImage:hover {
+  background: linear-gradient(135deg, #43a047, #5cce7a);
+}
+
+.downloadPDF {
+  background: linear-gradient(135deg, #2196f3, #42a5f5);
+}
+.downloadPDF:hover {
+  background: linear-gradient(135deg, #1976d2, #3891e5);
+}

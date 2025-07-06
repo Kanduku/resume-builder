@@ -1,0 +1,10 @@
+.toolbar {
+  padding: 1em;
+  background: #f8f8f8;
+}
+.toolbar select,
+.toolbar button,
+.toolbar input[type="color"] {
+  display: block;
+  margin: 8px 0;
+}

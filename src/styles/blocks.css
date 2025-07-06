@@ -1,0 +1,7 @@
+.block {
+  border: 1px solid #aaa;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 8px;
+  word-wrap: break-word;
+}

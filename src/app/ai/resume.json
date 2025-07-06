@@ -1,0 +1,56 @@
+{
+  "name": {
+    "firstname": "Nagendra",
+    "lastname": "Kumar Kandukuru"
+  },
+  "contact": {
+    "email": "kandukurunagendrakumar@gmail.com",
+    "phone": "+91 9391999571",
+    "website": "https://nagendra-hi4y.onrender.com",
+    "linkedin": "kankukuru-nagendra-kumar"
+  },
+  "location": "Andhra Pradesh, India",
+  "jobTitle": "Front-End Developer Intern",
+  "summary": "Motivated and detail-oriented fresher with hands-on experience in building responsive and interactive web applications using React.js, Express.js, and Django. Passionate about learning and contributing to innovative web projects.",
+  "skills": ["React.js", "JavaScript", "HTML", "CSS"],
+  "tools": ["GitHub", "Postman", "VS Code"],
+  "languages": ["English", "Telugu"],
+  "education": [
+    {
+      "degree": "B.Tech",
+      "field": "Computer Science",
+      "institution": "Sree Venkateswara College of Engineering",
+      "duration": "2022 - 2025",
+      "gpa": "7.7"
+    }
+  ],
+  "experience": [
+    {
+      "title": "Front-End Developer Intern",
+      "company": "Maigha Media Pvt. Ltd",
+      "project": "AppAnySite",
+      "duration": "Oct 2024 - Dec 2024",
+      "responsibilities": [
+        "Built forms for website-to-app conversion",
+        "Optimized metadata integration",
+        "Designed responsive console UI"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "To Do List App",
+      "description": "Full-stack MERN app with CRUD operations.",
+      "link": "https://task-pink-tau.vercel.app/"
+    },
+    {
+      "name": "Loan Approval Predictor",
+      "description": "Loan predictor using React.js & Django.",
+      "link": "https://loan-approval-theta.vercel.app/"
+    }
+  ],
+  "certifications": [
+    "NPTEL - Cloud Computing",
+    "HackerRank JavaScript (Basic)"
+  ]
+}

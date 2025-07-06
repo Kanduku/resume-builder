@@ -1,0 +1,12 @@
+.sidebar {
+  padding: 10px;
+  background: #f0f0f0;
+}
+.sidebar h3 {
+  margin-bottom: 10px;
+}
+.sidebar button {
+  display: block;
+  width: 100%;
+  margin-bottom: 5px;
+}

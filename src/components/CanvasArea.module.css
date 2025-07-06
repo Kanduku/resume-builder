@@ -1,0 +1,99 @@
+.canvasArea {
+  position: relative;
+  width: 210mm;
+  height: 297mm;
+  background: #fff;
+  border: 2px solid #000;
+  margin: 0em auto;
+  transform-origin: top center;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.canvasArea.dark {
+  background: #1e1e1e;
+}
+
+.canvasArea.preview {
+  box-shadow: none;
+}
+
+.block {
+  position: absolute;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: move;
+  box-sizing: border-box;
+  overflow: hidden;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+
+.block:hover {
+  box-shadow: 0 0 8px rgba(0,0,0,0.25);
+}
+
+.selected {
+  border: 2px solid #007acc;
+}
+
+.resizeHandle {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 10px;
+  height: 10px;
+  background: #333;
+  cursor: nwse-resize;
+}
+
+/* 👇 AI Tool Styling */
+.aiTool {
+
+   position: relative;
+  max-width: 800px;
+  margin: -1rem auto 1rem;
+   padding: 0.1rem 1rem 0.5rem 1rem; 
+   z-index: 10000;
+
+
+}
+
+.promptRow {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.promptInput {
+  flex: 1;
+  padding: 6px;
+  font-family: monospace;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+.aiButtons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.askButton,
+.copyButton {
+  padding: 8px 16px;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.askButton {
+  background: #2ecc71;
+}
+
+.copyButton {
+  background: #3498db;
+}
